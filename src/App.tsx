@@ -1,17 +1,25 @@
-import { useState } from 'react'
-import RootLayout from './components/RootLayout'
-import logo from './logo.svg'
+import img2016 from 'images/2016.jpg'
+import LocomotiveScroll from 'locomotive-scroll'
+import Test from './components/Test'
 import poweredBy from './powered-by-vitawind-dark.png'
 
 function App() {
-  const [count, setCount] = useState(0)
-  console.log('🚀 ~ file: App.tsx:7 ~ App ~ count:', count)
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+  })
 
   return (
-    <RootLayout>
-      <img src={logo} alt="" />
-      <img src={poweredBy} alt="" />
-    </RootLayout>
+    <div className={`h-[500vh] overflow-y-auto bg-black`} data-scroll-container>
+      <section className="flex h-screen justify-center bg-[#151515]">
+        <img src={img2016} alt="" />
+      </section>
+      <img data-scroll data-scroll-speed="1" src={poweredBy} alt="" />
+      <h1 data-scroll data-scroll-speed="0.5" className="text-white">
+        Text...
+      </h1>
+      <Test />
+    </div>
   )
   // return (
   //   <div className="text-center selection:bg-green-900">

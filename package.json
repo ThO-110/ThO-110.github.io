@@ -7,13 +7,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gsap": "^3.12.2",
+    "locomotive-scroll": "^4.1.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@types/locomotive-scroll": "^4.1.1",
+    "@types/node": "^20.7.0",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
+    "less": "^4.2.0",
     "prettier": "^3.0.3",
     "prettier-plugin-organize-imports": "^3.2.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
