@@ -120,3 +120,6 @@ yarn.lock
 
 # pnpm
 pnpm-lock.yaml
+
+# nvm-desktop
+.nvmdrc
